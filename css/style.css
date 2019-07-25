@@ -1,0 +1,40 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Lobster|Raleway");
+/* Main CSS */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway', sans-serif !important;
+  position: relative;
+}
+.navbar-toggler {
+  border: 0px !important;
+}
+
+/*-- Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  #main h2 {
+    font-size: 2em;
+  }
+  #main p {
+    font-size: 1em;
+  }
+}
+/*-- Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*-- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
